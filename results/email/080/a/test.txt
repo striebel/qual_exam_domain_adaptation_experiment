@@ -1,0 +1,5 @@
+LAS F1 Score: 83.20
+MLAS Score: 78.20
+BLEX Score: 80.67
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00

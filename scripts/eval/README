@@ -1,0 +1,8 @@
+0004a : generate human-readable text files
+0004b : generate same results as json
+0004c : generate same results as json plus
+          include additional information needed
+          for significance testing
+
+my_eval_c : new version of 0004c
+my_eval_d : new version of sig/0004c

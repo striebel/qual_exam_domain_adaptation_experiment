@@ -1,0 +1,364 @@
+
+Fri Aug 18 15:35:37 EDT 2023
+
+
+0002 answer
+======================
+
+LAS F1 Score: 90.58
+MLAS Score: 88.15
+BLEX Score: 88.78
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0003 answer
+======================
+
+LAS F1 Score: 90.48
+MLAS Score: 87.82
+BLEX Score: 88.39
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 answer 00
+======================
+
+LAS F1 Score: 89.54
+MLAS Score: 86.82
+BLEX Score: 87.54
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 answer 02
+======================
+
+LAS F1 Score: 90.73
+MLAS Score: 88.16
+BLEX Score: 88.54
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 answer 04
+======================
+
+LAS F1 Score: 90.42
+MLAS Score: 87.90
+BLEX Score: 88.40
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 answer 06
+======================
+
+LAS F1 Score: 90.54
+MLAS Score: 88.00
+BLEX Score: 88.41
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 answer 08
+======================
+
+LAS F1 Score: 90.58
+MLAS Score: 88.03
+BLEX Score: 88.54
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 answer 10
+======================
+
+LAS F1 Score: 88.34
+MLAS Score: 84.75
+BLEX Score: 85.88
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0002 email
+======================
+
+LAS F1 Score: 89.82
+MLAS Score: 86.80
+BLEX Score: 87.28
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0003 email
+======================
+
+LAS F1 Score: 90.01
+MLAS Score: 87.34
+BLEX Score: 87.66
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 email 00
+======================
+
+LAS F1 Score: 86.71
+MLAS Score: 83.30
+BLEX Score: 83.78
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 email 02
+======================
+
+LAS F1 Score: 89.68
+MLAS Score: 86.85
+BLEX Score: 87.22
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 email 04
+======================
+
+LAS F1 Score: 90.18
+MLAS Score: 87.33
+BLEX Score: 87.75
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 email 06
+======================
+
+LAS F1 Score: 90.11
+MLAS Score: 87.26
+BLEX Score: 87.58
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 email 08
+======================
+
+LAS F1 Score: 90.51
+MLAS Score: 87.72
+BLEX Score: 88.10
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 email 10
+======================
+
+LAS F1 Score: 88.67
+MLAS Score: 85.36
+BLEX Score: 86.13
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0002 newsgroup
+======================
+
+LAS F1 Score: 90.70
+MLAS Score: 88.18
+BLEX Score: 88.76
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0003 newsgroup
+======================
+
+LAS F1 Score: 90.70
+MLAS Score: 88.48
+BLEX Score: 88.89
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 newsgroup 00
+======================
+
+LAS F1 Score: 89.87
+MLAS Score: 87.69
+BLEX Score: 88.15
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 newsgroup 02
+======================
+
+LAS F1 Score: 91.10
+MLAS Score: 88.94
+BLEX Score: 89.44
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 newsgroup 04
+======================
+
+LAS F1 Score: 90.99
+MLAS Score: 88.85
+BLEX Score: 89.16
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 newsgroup 06
+======================
+
+LAS F1 Score: 90.14
+MLAS Score: 87.66
+BLEX Score: 88.11
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 newsgroup 08
+======================
+
+LAS F1 Score: 90.43
+MLAS Score: 87.97
+BLEX Score: 88.42
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 newsgroup 10
+======================
+
+LAS F1 Score: 87.89
+MLAS Score: 84.34
+BLEX Score: 84.88
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0002 reviews
+======================
+
+LAS F1 Score: 92.00
+MLAS Score: 89.72
+BLEX Score: 90.50
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0003 reviews
+======================
+
+LAS F1 Score: 92.11
+MLAS Score: 89.74
+BLEX Score: 90.43
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 reviews 00
+======================
+
+LAS F1 Score: 91.26
+MLAS Score: 88.74
+BLEX Score: 89.43
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 reviews 02
+======================
+
+LAS F1 Score: 92.30
+MLAS Score: 89.86
+BLEX Score: 90.55
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 reviews 04
+======================
+
+LAS F1 Score: 91.81
+MLAS Score: 89.53
+BLEX Score: 90.01
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 reviews 06
+======================
+
+LAS F1 Score: 92.37
+MLAS Score: 90.08
+BLEX Score: 90.69
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 reviews 08
+======================
+
+LAS F1 Score: 92.22
+MLAS Score: 89.84
+BLEX Score: 90.44
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 reviews 10
+======================
+
+LAS F1 Score: 91.34
+MLAS Score: 88.41
+BLEX Score: 89.22
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0002 weblog
+======================
+
+LAS F1 Score: 91.82
+MLAS Score: 89.06
+BLEX Score: 89.73
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0003 weblog
+======================
+
+LAS F1 Score: 91.75
+MLAS Score: 89.13
+BLEX Score: 89.68
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 weblog 00
+======================
+
+LAS F1 Score: 90.69
+MLAS Score: 87.19
+BLEX Score: 87.93
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 weblog 02
+======================
+
+LAS F1 Score: 92.16
+MLAS Score: 89.80
+BLEX Score: 90.31
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 weblog 04
+======================
+
+LAS F1 Score: 91.46
+MLAS Score: 88.49
+BLEX Score: 88.96
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 weblog 06
+======================
+
+LAS F1 Score: 91.32
+MLAS Score: 88.36
+BLEX Score: 88.90
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 weblog 08
+======================
+
+LAS F1 Score: 91.10
+MLAS Score: 88.20
+BLEX Score: 88.90
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
+0004 weblog 10
+======================
+
+LAS F1 Score: 88.26
+MLAS Score: 83.20
+BLEX Score: 84.76
+ELAS F1 Score: 0.00
+EULAS F1 Score: 0.00
+
