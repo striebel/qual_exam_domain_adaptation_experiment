@@ -109,22 +109,22 @@ as desired. Then run
 
 ### Create venv and install parser
 
-followed by
+Run
 ```sh
 scripts/setup/venv.sh
 ```
-to create a Python virtual environment into which the parser will be installed.
+to create a Python virtual environment into which the parser will be installed
+(or, more accurately because the parser is not distributed as a Python package,
+the parser will not be installed into the venv, rather just the parser's list of
+dependencies will be installed, and we will invoke the parser's train and
+predict scripts directly with fully qualified paths).
 
-The script
-```sh
-scripts/setup/parser/download.sh
-```
-will download a fresh version of the parser, but this script should not be run,
-because a modified version of the parser is already included in this repo.
+A modified version of the Machamp parser is included in this repository at
+[parser/machamp-0.2](./parser/machamp-0.2).
 
-However, the following parser installation script should be run:
+Install the dependencies with
 ```sh
-scripts/setup/parser/install.sh
+scripts/setup/install.sh
 ```
 
 <h2 id='data'>Data</h2>
