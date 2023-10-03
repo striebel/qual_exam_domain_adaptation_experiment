@@ -5,14 +5,15 @@ Carbonate cluster.
 
 ## Contents
 
-* <a href='#carbonate-access'>Carbonate access</a>
 * <a href='#environment'>Environment</a>
 * <a href='#data'>Data</a>
 * <a href='#train-and-predict'>Train and predict</a>
 * <a href='#evaluate'>Evaluate</a>
 * <a href='#visualize-results'>Visualize results</a>
 
-<h2 id='carbonate-access'>Carbonate access</h2>
+<h2 id='environment'>Environment</h2>
+
+### Carbonate access
 
 To enable ssh key access, first see the
 [system access section of the general knolwedge base
@@ -58,7 +59,7 @@ be loaded automatically when logging in to the local machine
 and to be applied automatically when
 ssh'ing into Carbonate.
 
-<h2 id='environment'>Environment</h2>
+### Obtain and set up compute node
 
 ssh into a Carbonate login node with
 ```sh
@@ -105,6 +106,9 @@ as desired. Then run
 ```sh
 . set_vars.sh
 ```
+
+### Create venv and install parser
+
 followed by
 ```sh
 scripts/setup/venv.sh
