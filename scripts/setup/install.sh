@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 if [ ! -v MACHAMP_VERSION ]; then
     echo "ERROR: MACHAMP_VERSION not set, exiting"
@@ -20,6 +20,7 @@ $REPO_DIR/$VENV_NAME/bin/python -m pip install \
     "transformers==4.0.0" \
     "torch==1.7.1" \
     "networkx" \
+    "jsonnet" \
     "conllu" \
     "statsmodels" \
     "mlxtend"

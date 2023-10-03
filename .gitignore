@@ -4,6 +4,7 @@ tmp*
 data/0002/*.conllu
 data/0003/*.conllu
 logs/
+configs/bin/
 configs/params.json
 configs/0002/*.json
 configs/0003/*.json

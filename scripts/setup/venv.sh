@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 if [ ! -v REPO_DIR ]; then
     echo "ERROR: REPO_DIR is not set, exiting"
     exit
