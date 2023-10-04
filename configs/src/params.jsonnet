@@ -3,8 +3,8 @@ local transformer_dim = 768;
 
 local max_len       =  512;
 local my_batch_size =   32;
-local my_patience   =    1;
-local my_num_epochs =   24;
+local my_patience   =    8;
+local my_num_epochs =  192;  # 24;
 
 {
     "random_seed": 13370,

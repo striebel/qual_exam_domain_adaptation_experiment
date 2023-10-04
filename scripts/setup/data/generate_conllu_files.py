@@ -124,6 +124,7 @@ def generate_conllu_files(treebank_dir, folds_dir):
         dev_sent_strs   = list()
         train_sent_strs = list()
         domain_to_test_sent_strs = dict()
+        domain_to_dev_sent_strs  = dict()
         for domain, chosen_sent_strs in domain_to_chosen_sent_strs.items():
             assert 1000 == len(chosen_sent_strs)
             _test_sent_strs  = chosen_sent_strs[
@@ -153,10 +154,11 @@ def generate_conllu_files(treebank_dir, folds_dir):
             train_sent_strs += _train_sent_strs
             assert domain not in domain_to_test_sent_strs
             domain_to_test_sent_strs[domain] = _test_sent_strs
+            domain_to_dev_sent_strs[domain]  = _dev_sent_strs
         assert 1000 == len(test_sent_strs)
         assert 1000 == len(dev_sent_strs)
         assert 8000 == len(train_sent_strs)
- 
+        
         if 'a'==fold:
             assert not os.path.isdir(conllu_folds_dir)
             os.mkdir(conllu_folds_dir)
@@ -188,6 +190,17 @@ def generate_conllu_files(treebank_dir, folds_dir):
                 + '\n\n'
             )
             file.close()
+        dev_domains_dir = os.path.join(this_fold_dir, 'dev')
+        assert not os.path.isdir(dev_domains_dir)
+        os.mkdir(dev_domains_dir)
+        for domain, dev_sent_strs in domain_to_dev_sent_strs.items():
+            file_path = os.path.join(dev_domains_dir, domain+'.conllu')
+            assert not os.path.isfile(file_path)
+            file = open(file_path, 'w')
+            file.write(
+                '\n\n'.join([sent_str.strip() for sent_str in dev_sent_strs])
+                + '\n\n'
+            )
     
     return 0
 

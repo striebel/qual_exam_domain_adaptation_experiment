@@ -200,6 +200,35 @@ scripts/train/dispatch_all.sh
 in order to submit all of the jobs to Slurm for training and running predict
 on the test data.
 
+If debugging debugging is required, first try executing one of the individual
+model scripts; for example:
+```sh
+scripts/train/answer/010/a.sh
+```
+
+Then try submitting a slurm job which will run the train script for all ten
+folds for a certain proportion; for example:
+```sh
+sbatch scripts/train/answer/010.sbatch
+```
+
+Check the status of the job with
+```sh
+squeue -u <username>
+```
+(Make sure that you submit the job from a login node and not a compute
+node, because doing the latter will produce a hard-to-debug failure.)
+
+One can dispatch all the slurm jobs for a given domain (all 21 proportions):
+```sh
+scripts/train/answer_dispatch.sh
+```
+
+And then all the jobs can be submitted with the already mentioned script:
+```sh
+scripts/train/dispatch_all.sh
+```
+
 <h2 id='evaluate'>Evaluate</h2>
 
 Execute

@@ -1,6 +1,7 @@
 from typing import Iterator
 import sys
 import random
+import math
 
 import torch
 import allennlp
@@ -86,13 +87,14 @@ class DependencyDataLoader(allennlp.data.dataloader.DataLoader):
         
         #for idx in range(len(dataset)):
         
-        assert len(dataset) in [1000, 8000]
-        if 1000 == len(dataset):
-            my_len = 1000
+        assert len(dataset) in [100, 8000]
+        if 100 == len(dataset):
+            my_len = 100
+            self._partition = 'dev'
         else:
             assert 8000 == len(dataset)
             my_len = 8000
-        
+            self._partition = 'train'
         for idx in range(my_len):
             instance = dataset[idx]
             assert self._domain     == instance.domain
@@ -108,7 +110,7 @@ class DependencyDataLoader(allennlp.data.dataloader.DataLoader):
             self._domain_to_instances[domain].append(instance)
             
         #print([(domain, len(instances)) for domain, instances in self._domain_to_instances.items()]); sys.exit(-1)
-            
+        
         
         self._dataset    = dataset   ; del dataset
         self._batch_size = batch_size; del batch_size
@@ -154,32 +156,47 @@ class DependencyDataLoader(allennlp.data.dataloader.DataLoader):
         other_domains = [d for d in domain_to_instances.keys() if d != self._domain]
         assert 9 == len(other_domains)
         
-        while True:
-            batch = list()
-            for _ in range(self._batch_size):
-                sample = random.random()
-                assert isinstance(sample, float)
-                assert 0.0 <= sample and sample < 1.0
-                if sample < proportion:
-                    try:
-                        batch.append(domain_to_instances[self._domain].pop())
-                        domain_to_count[self._domain] += 1
-                        total+=1
-                    except IndexError:
-                        break
-                else:
-                    other_domain = random.choice(other_domains)
-                    try:
-                        batch.append(domain_to_instances[other_domain].pop())
-                        domain_to_count[other_domain] += 1
-                        total+=1 
-                    except IndexError:
-                        break
-            if len(batch) < self._batch_size:
-                break
-            assert len(batch) == self._batch_size
+        assert self._partition in ['dev', 'train']
+        if 'dev' == self._partition:
+            for other_domain in other_domains:
+                assert 0 == len(domain_to_instances[other_domain])
+            assert 100 == len(domain_to_instances[self._domain])
+            batch = domain_to_instances[self._domain]
             self._batches.append(batch)
-        
+        else:
+            assert 'train' == self._partition
+            batches_per_epoch = math.floor( 800.0 / self._batch_size )
+            #while True:
+            for _ in range(batches_per_epoch):
+                batch = list()
+                for _ in range(self._batch_size):
+                    sample = random.random()
+                    assert isinstance(sample, float)
+                    assert 0.0 <= sample and sample < 1.0
+                    if sample < proportion:
+                        try:
+                            batch.append(domain_to_instances[self._domain].pop())
+                            domain_to_count[self._domain] += 1
+                            total+=1
+                        except IndexError:
+                            break
+                    else:
+                        other_domain = random.choice(other_domains)
+                        try:
+                            batch.append(domain_to_instances[other_domain].pop())
+                            domain_to_count[other_domain] += 1
+                            total+=1 
+                        except IndexError:
+                            break
+                if len(batch) < self._batch_size:
+                    break
+                assert len(batch) == self._batch_size
+                self._batches.append(batch)
+            
+            assert batches_per_epoch <= len(self._batches)
+            self._batches = self._batches[:batches_per_epoch]
+            assert batches_per_epoch == len(self._batches)
+            
         self._len = len(self._batches)
         
         #print('proportion :', proportion)
