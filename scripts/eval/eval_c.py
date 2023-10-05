@@ -147,6 +147,7 @@ def main():
                 else:
                     n_missing += 1
                     print(f'{j: >4} / {NUM_PRED_FILES} pred test file NOT present')
+                    #print(f'    {test_file_path}')
                     domain_to_proportion_to_is_done[domain][proportion] = False
                 j += 1
     

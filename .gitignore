@@ -53,3 +53,8 @@ scripts/train/newsgroup*.sh
 scripts/train/reviews*.sh
 scripts/train/weblog*.sh
 results/
+scripts/eval/archive_and_compress_results.sbatch
+scripts/eval/archive_and_compress_results.sh
+scripts/eval/archive_and_compress_results.stderr
+scripts/eval/archive_and_compress_results.stdout
+

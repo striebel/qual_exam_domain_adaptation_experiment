@@ -233,17 +233,27 @@ scripts/train/dispatch_all.sh
 
 Execute
 ```sh
-scripts/eval/my_eval_c.sh
+scripts/eval/eval_c.sh
 ```
 followed by
 ```sh
-scripts/eval/my_eval_d.sh
+scripts/eval/eval_d.sh
 ```
 
-Then tar and compress the `<repo_root>/results` dir and copy it to your local
+Then archive and compress the `$RSLT_DIR` dir and copy it to your local
 machine.
+The tar and gzip part can be done by executing
+```sh
+scripts/eval/generate_archive_and_compress_script.sh
+```
+followed by
+```sh
+sbatch scripts/eval/archive_and_compress_results.sbatch
+```
 
 <h2 id='visualize-results'>Visualize results</h2>
 
-Install Jupyter Lab locally, and open `scripts/visualize/visualize.ipynb`.
-Run this notebook to generate charts that show the results.
+See [https://github.com/striebel/domain\_adaptation\_charts](
+https://github.com/striebel/domain_adaptation_charts).
+This repo also provides a script for copying the tarred and gzipped
+results directory to local.
