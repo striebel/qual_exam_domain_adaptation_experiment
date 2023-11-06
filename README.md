@@ -241,7 +241,7 @@ scripts/eval/eval_c.sh
 This script will first check how many of the models are done training
 and print that statistic,
 and the script will also prompt you to press return to continue.
-If all the models have all trained, press return;
+If all the models have trained, press return;
 otherwise press Ctrl+c to exit the script.
 
 <h2 id='evaluate'>Evaluate</h2>
