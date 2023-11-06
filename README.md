@@ -1,4 +1,4 @@
-# Domain adaptation experiment
+# Qual exam domain adaptation experiment
 
 Instructions for running the experiment on Indiana University's
 Carbonate cluster.
@@ -253,7 +253,7 @@ sbatch scripts/eval/archive_and_compress_results.sbatch
 
 <h2 id='visualize-results'>Visualize results</h2>
 
-See [https://github.com/striebel/domain\_adaptation\_charts](
-https://github.com/striebel/domain_adaptation_charts).
+See [https://github.com/striebel/qual\_exam\_domain\_adaptation\_charts](
+https://github.com/striebel/qual_exam_domain_adaptation_charts).
 This repo also provides a script for copying the tarred and gzipped
 results directory to local.
