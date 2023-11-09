@@ -98,7 +98,7 @@ module load python/3.9.8
 
 Clone the experiment repository:
 ```sh
-git clone git@github.com:striebel/domain_adaptation_experiment.git
+git clone git@github.com:striebel/qual_exam_domain_adaptation_experiment.git
 ```
 
 cd into the clone repo and
